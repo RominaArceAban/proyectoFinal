@@ -5,32 +5,10 @@
 }
 
 .header{
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-between; 
-    background-color: rgba(15, 15, 15, 0.842);
     overflow: hidden;
-    width: 100%;
-}
-
-.header__logo{
-    width: 200px;
-}
-
-.header__nav{
-    padding: 10px; 
-}
-
-.header__list{
-    list-style: none;
-    display: flex;
 }
 
 .header__item--links{
-    padding: 20px;
-    font-size: 2rem;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: aliceblue;
     text-decoration: none;
@@ -41,36 +19,17 @@
     text-decoration: underline;
 }
 
-.grid__index{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(3, 1fr);
-    grid-column-gap: 0px; 
-    overflow: hidden;
-}
-
-.sectionUno{
+.imagenDeFondoHero{
     background-image: url(../assets/fondoDeRopa.png);
+    width: 100%;
+    height: 700px;
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    color: aliceblue;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    place-content: center;
-    overflow: hidden;
-
-}
-
-.sectionUno__titulo{
-    width: 600px;
-    padding: 20px 0px;
-    font-size: 4rem;
-}
-
-.sectionUno__subtitulo{
-    font-size: 2.5rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgba(240, 248, 255, 0.767);
+    text-decoration: none;
+    overflow:hidden;
 }
 
 .sectionDos{
@@ -79,8 +38,7 @@
     background-size: cover;
     position: relative;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    overflow: hidden;
-    
+    overflow: hidden; 
 }
 
 .sectionDos__nosotros{
@@ -163,13 +121,12 @@
 }
 
 .footer__partes{
-   
     color: aliceblue;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 20px;
+    font-size: 15px;
     align-items: center;
     justify-content: space-between;
     gap: 40px;

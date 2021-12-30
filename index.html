@@ -12,24 +12,37 @@
 </head>
 <body>
     <header class="header">
-        <img class="header__logo" src="./assets/logo.png"  alt="Logo">
-        <nav class="navbar navbar-expand-lg">
-            <ul class="header__list">
-                <li class="header__item"><a class="header__item--links" href="#">Inicio</a></li>
-                <li class="header__item"><a class="header__item--links" href="./secciones/Remeras.html">Remeras</a></li>
-                <li class="header__item"><a class="header__item--links" href="./secciones/Buzos.html"> Buzos</a></li>
-                <li class="header__item"><a class="header__item--links" href="./secciones/Talles.html">Talles</a></li>
-                <li class="header__item"><a class="header__item--links" href="./secciones/Contactanos.html">Contacto</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="./assets/logo.png" alt="logo" width="200" height="50">
+                </a>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link header__item--links" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link header__item--links" href="./secciones/Remeras.html">Remeras</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link header__item--links" href="./secciones/Buzos.html">Buzos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link header__item--links" href="./secciones/Talles.html">Talles</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link header__item--links" href="./secciones/Contactanos.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
         </nav>
     </header>
-    <main class="grid__index">
-        <section class="sectionUno"> 
-                <div class="hero__der"> 
-                </div>
-                <div class="hero__izq"> 
-                    <h5 class="sectionUno__subtitulo">Bienvenidos a nuestro sitio oficial</h5>
-                    <h1 class="sectionUno__titulo">La felicidad no es suerte, la creamos nosotros...</h1> 
+    <main>
+        <section class="container imagenDeFondoHero position-relative"> 
+                <div class="row">
+                    <div class="col-12 position-absolute top-50 start-50 display-6">Bienvenidos a nuestro sitio oficial
+                        <h1 class="display-4">La felicidad no es suerte,<br>la creamos nosotros...</h1>
+                    </div>
                 </div>
         </section><!-- / HERO-->
         <section  class="sectionDos">
@@ -75,11 +88,9 @@
                 <ul class="footer__contacto__list">
                     <li><a class="links" href="#">Inicio</a></li>
                     <li><a class="links" href="./secciones/Remeras.html">Remeras</a></li>
-                </ul>  
-                <ul class="footer__contacto__list">
                     <li><a class="links" href="./secciones/Buzos.html">Buzos</a></li>
                     <li><a class="links" href="./secciones/Talles.html">Talles</a></li>
-                </ul>
+                </ul> 
             </div>
             <div class="footer__partes--redes">
                 <h2>Redes</h2>

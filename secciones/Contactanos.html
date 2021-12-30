@@ -7,49 +7,64 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contactanos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"><!--CDN de bs-->
     <link rel="stylesheet" href="../css/estilos.css">
 </head>
 <body>
     <header class="header">
-        <img  class="header__logo" src="../assets/logo.png" alt= "logo"">
-        <nav class="header__nav">
-            <ul class="header__list">
-                <li class="header__item"><a class="header__item--links" href="../index.html">Inicio</a></li>
-                <li class="header__item"><a class="header__item--links" href="Remeras.html">Remeras</a></li>
-                <li class="header__item"><a class="header__item--links" href="Buzos.html">Buzos</a></li>
-                <li class="header__item"><a class="header__item--links" href="Talles.html">Talles</a></li>
-                <li class="header__item"><a class="header__item--links" href="#">Contactanos</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="../assets/logo.png" alt="logo" width="200" height="50">
+                </a>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link header__item--links" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link header__item--links" href="./Remeras.html">Remeras</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link header__item--links" href="./Buzos.html">Buzos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link header__item--links" href="Talles.html">Talles</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link header__item--links" href="#">Contacto</a>
+                    </li>
+                </ul>
+            </div>
         </nav>
     </header>
     <main class="formulario">
-        <form action="#" method="get">
+        <form>
             <fieldset>
-                <legend>Consultanos</legend>
-                <div>
-                    <label for="name">Nombre</label>
-                    <input type="text" name="user_name" id="name" placeholder="Introduzca su nombre">
-                </div>
-                <div>
-                    <label for="lastname">Apellido</label>
-                    <input type="text" name="user_lastname" id="lastname" placeholder="Introduzca su apellido">
-                </div>
-                <div>
-                    <label for="mail">Correo electronico</label>
-                    <input type="email" name="user_mail" id="mail" placeholder="micorreo@ejemplo.com">
-                </div>
-                <div>
-                    <label for="mensaje">Mensaje</label>
-                    <textarea name="user_mensaje" id="mensaje" cols="30" rows="10" placeholder="Deje su mensaje"></textarea>
-                </div>
+              <legend>Formulario de contacto</legend>
+              <div class="mb-3">
+                <label for="disabledTextInput" class="form-label">Nombres</label>
+                <input type="text" id="disabledTextInput" class="form-control" placeholder="Introduzca su nombre y apellido">
+              </div>
+              <div class="mb-3">
+                <label for="disabledSelect" class="form-label">Numero telefonico</label>
+                <input type="text" id="disabledTextInput" class="form-control" placeholder="Introduzca su numero de celular o telefono">
+              </div>
+
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Correo electronico</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+              </div>
+              <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Check me out</label>
+              </div>
+              <button type="submit" class="btn btn-primary">Enviar</button>
             </fieldset>
-            <div>
-                <input type="submit" value="ENVIAR">
-            </div>
-            <div>
-                <input type="reset" value="BORRAR">
-            </div>
-        </form>
+          </form>
     </main>
     <footer class="footer">
         <img class="footer__logo" src="../assets/logo.png" alt="logo">
@@ -67,8 +82,6 @@
                 <ul class="footer__contacto__list">
                     <li><a class="links" href="../index.html">Inicio</a></li>
                     <li><a class="links" href="../secciones/Remeras.html">Remeras</a></li>
-                </ul>  
-                <ul class="footer__contacto__list">
                     <li><a class="links" href="../secciones/Buzos.html">Buzos</a></li>
                     <li><a class="links" href="../secciones/Talles.html">Talles</a></li>
                 </ul>
@@ -84,5 +97,6 @@
     <script>
         AOS.init();
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
