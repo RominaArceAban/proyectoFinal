@@ -15,7 +15,7 @@
         <nav class="navbar navbar-expand-lg navbar-dark">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">
-                    <img src="./assets/logo.png" alt="logo" width="200" height="50">
+                    <img src="./assets/logo.png" alt="logo" height="50">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -44,34 +44,36 @@
         </nav>
     </header>
     <main>
-        <section class="container imagenDeFondoHero position-relative"> 
+        <section class="container-fluid imagenDeFondoHero position-relative"> 
                 <div class="row">
-                    <div class="col-12 position-absolute top-50 start-50 display-6">Bienvenidos a nuestro sitio oficial
+                    <div class="col-12 hero display-6">Bienvenidos a nuestro sitio oficial
                         <h1 class="display-4">La felicidad no es suerte,<br>la creamos nosotros...</h1>
                     </div>
                 </div>
         </section><!-- / HERO-->
-        <section  class="sectionDos">
-            <article data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-offset="0" class="sectionDos__nosotros">
-                <h1>Nosotros</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime omnis ratione aspernatur iure rerum deserunt perferendis doloribus placeat odio veniam optio eos, a culpa incidunt esse id recusandae dolor ab?
-                Recusandae error possimus natus earum beatae perferendis accusamus nesciunt! Consequuntur, inventore eaque tenetur nam repellat, recusandae qui nostrum sed voluptatum maiores quod nemo, repellendus dicta debitis provident ipsam! Qui, distinctio.</p>
-            </article> 
+        <section  class="container-fluid sectionDos">
+            <article data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-offset="0" class="row sectionDos__nosotros">
+                <div class="col-12">
+                    <h1>Nosotros</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime omnis ratione aspernatur iure rerum deserunt perferendis doloribus placeat odio veniam optio eos, a culpa incidunt esse id recusandae dolor ab?
+                    Recusandae error possimus natus earum beatae perferendis accusamus nesciunt! Consequuntur, inventore eaque tenetur nam repellat, recusandae qui nostrum sed voluptatum maiores quod nemo, repellendus dicta debitis provident ipsam! Qui, distinctio.</p>
+                </div> 
+            </article>
         </section>
-        <section class="sectionTres">
-            <article class="sectionTres__imagenes">
-                <div data-aos="fade-right"data-aos-offset="300"data-aos-easing="ease-in-sine" class="sectionTres__imagenes-envio">
-                    <img src="./assets/envios.png" width="200px" alt="Envios">
+        <section class="container-fluid sectionTres">
+            <article class=" row sectionTres__imagenes">
+                <div data-aos="fade-right"data-aos-offset="300"data-aos-easing="ease-in-sine" class="col-4 sectionTres__imagenes-envio">
+                    <img src="./assets/envios.png" width="150px" alt="Envios">
                     <h2>Envios</h2>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio, aliquam?</p>
                 </div>
-                <div data-aos="fade-up"data-aos-offset="300"data-aos-easing="ease-in-sine" class="sectionTres__imagenes-pagos">
-                    <img src="./assets/pagos.png" width="200px" alt="Pagos">
+                <div data-aos="fade-up"data-aos-offset="300"data-aos-easing="ease-in-sine" class="col-4 sectionTres__imagenes-pagos">
+                    <img src="./assets/pagos.png" width="150px" alt="Pagos">
                     <h2>Pagos</h2>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio, aliquam?</p>
                 </div>
-                <div data-aos="fade-left"data-aos-offset="300"data-aos-easing="ease-in-sine" class="sectionTres__imagenes-contacto">
-                    <img src="./assets/contacto.png" width="200px" alt="Contacto">
+                <div data-aos="fade-left"data-aos-offset="300"data-aos-easing="ease-in-sine" class="col-4 sectionTres__imagenes-contacto">
+                    <img src="./assets/contacto.png" width="150px" alt="Contacto">
                     <h2>Contacto</h2>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio, aliquam?</p>
                 </div>
