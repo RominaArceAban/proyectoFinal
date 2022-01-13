@@ -158,14 +158,14 @@
     padding: 0px;
 }
 
-.footer__partes--secciones{
+.footer__partes__secciones{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
 }
 
-.footer__partes--redes{
+.footer__partes__redes{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;

@@ -1,10 +1,12 @@
+@import "./variables";
+
 .imagenDeFondoHero{
     background-image: url(../assets/fondoDeRopa.png);
     height: 90vh;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: $verdana;
     color: rgba(240, 248, 255, 0.767);
     text-decoration: none;
     overflow:hidden;

@@ -4,12 +4,12 @@
     overflow: hidden;
 
     &__item--links{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: aliceblue;
+    font-family: $verdana;
+    color: $blanco;
     text-decoration: none;
 
     &:hover{
-    color: rgba(175, 96, 85, 0.973);
+    color: $naranja;
     text-decoration: underline;
 }
 } 
