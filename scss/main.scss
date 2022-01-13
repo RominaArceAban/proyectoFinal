@@ -1,31 +1,15 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+@import "./parciales/reset";
+@import "./parciales/variables";
+@import "./parciales/componentes";
+@import "./parciales/header";
+@import "./parciales/hero";
+@import "./parciales/section";
+@import "./parciales/footer";
+@import "./parciales/queries";
 
-.header{
-    overflow: hidden;
 
-    .header__item--links{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: aliceblue;
-    text-decoration: none;
 
-    .header__item--links:hover{
-    color: rgba(175, 96, 85, 0.973);
-    text-decoration: underline;
-}
-} 
-    .navbar{
-    background-color: rgba(15, 15, 15, 0.842);
-    font-size: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
 
-}
-}
 
 
 
