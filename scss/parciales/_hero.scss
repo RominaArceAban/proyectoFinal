@@ -3,10 +3,10 @@
 .imagenDeFondoHero{
     background-image: url(../assets/fondoDeRopa.png);
     height: 90vh;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    font-family: $verdana;
+    background-size: map-get($map: $imagenDeFondo, $key: imagen-size);
+    background-position: map-get($map: $imagenDeFondo, $key: imagen-centro);
+    background-repeat: map-get($map: $imagenDeFondo, $key: imagen-repeat);
+    font-family: map-get($map: $imagenDeFondo, $key: letra);
     color: rgba(240, 248, 255, 0.767);
     text-decoration: none;
     overflow:hidden;

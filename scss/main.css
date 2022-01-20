@@ -102,38 +102,12 @@
 .sectionTres__imagenes {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[3];
+  -ms-grid-columns: (1fr)(3);
       grid-template-columns: repeat(3, 1fr);
   place-content: center;
 }
 
-.sectionTres__imagenes-envio {
-  display: inline-block;
-  background: #22c1c3;
-  background: -webkit-gradient(linear, left bottom, left top, from(#22c1c3), color-stop(0%, #77bbc0), color-stop(0%, #a2b8bb), color-stop(0%, #a7b7bc), color-stop(72%, #b4b6bd));
-  background: linear-gradient(0deg, #22c1c3 0%, #77bbc0 0%, #a2b8bb 0%, #a7b7bc 0%, #b4b6bd 72%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#22c1c3",endColorstr="#b4b6bd",GradientType=1);
-  padding: 10px 0px;
-  text-align: center;
-  font-size: 20px;
-  width: 300px;
-  margin: 110px 60px;
-}
-
-.sectionTres__imagenes-pagos {
-  display: inline-block;
-  background: #22c1c3;
-  background: -webkit-gradient(linear, left bottom, left top, from(#22c1c3), color-stop(0%, #77bbc0), color-stop(0%, #a2b8bb), color-stop(0%, #a7b7bc), color-stop(72%, #b4b6bd));
-  background: linear-gradient(0deg, #22c1c3 0%, #77bbc0 0%, #a2b8bb 0%, #a7b7bc 0%, #b4b6bd 72%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#22c1c3",endColorstr="#b4b6bd",GradientType=1);
-  padding: 10px 0px;
-  text-align: center;
-  font-size: 20px;
-  width: 300px;
-  margin: 110px 60px;
-}
-
-.sectionTres__imagenes-contacto {
+.sectionTres__imagenes-cuadro, .sectionTres__imagenes-cuadro--uno, .sectionTres__imagenes-cuadro--dos, .sectionTres__imagenes-cuadro--tres {
   display: inline-block;
   background: #22c1c3;
   background: -webkit-gradient(linear, left bottom, left top, from(#22c1c3), color-stop(0%, #77bbc0), color-stop(0%, #a2b8bb), color-stop(0%, #a7b7bc), color-stop(72%, #b4b6bd));
@@ -223,7 +197,6 @@
 }
 
 .footer__contacto__list {
-  list-style-type: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -231,6 +204,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  list-style-type: none;
   text-decoration: none;
   padding: 0px;
 }

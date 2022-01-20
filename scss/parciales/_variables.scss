@@ -1,3 +1,10 @@
 $blanco: aliceblue;
 $verdana: Verdana, Geneva, Tahoma, sans-serif;
 $naranja: rgba(175, 96, 85, 0.973);
+
+$imagenDeFondo: (/*mapa-get*/
+    imagen-repeat: no-repeat,
+    imagen-size: cover,
+    imagen-centro: center,
+    letra: $verdana,
+);
