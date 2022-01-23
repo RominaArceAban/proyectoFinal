@@ -1,0 +1,51 @@
+@import "./variables";
+@mixin columna {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content:space-between;
+    background-color: rgba(15, 15, 15, 0.842);
+    overflow: hidden;
+
+    &__logo{
+    width: 200px;
+}
+
+    &__partes{
+    color: $blanco;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-family: $verdana;
+    font-size: 18px;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 10px 80px;
+
+    &__secciones{
+    @include columna;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+    &__redes{
+    @include columna;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+}
+
+    &__contacto__list{
+    @include columna;
+    list-style-type: none;
+    text-decoration: none;
+    padding: 0px;
+}
+}
+
