@@ -10,7 +10,7 @@
     <meta name="description" content="Compra productos de Alson por internet. Tenemos remeras, buzos y mas. Hace tu pedido y pagalo online.">
     <meta name="keywords" content="VENTA, REMERAS, BUZOS, DIFERENTES TAMAÑOS, REDES">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"><!--CDN de bs-->
-    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="stylesheet" href="../scss/main.css">
 </head>
 <body>
     <header class="header">
@@ -46,17 +46,29 @@
         </nav>
     </header>
     <main>
-        <div>
-            <h1 class="titulo__ropa">Talles</h1>
-            <div class="imagenes__ropa">
-               <h2 class="titulo__ropa">Remeras</h2>
-               <img src="../assets/talles.png" width="200px" alt="tabla de talles de remera para hombre">
-               <img src="../assets/talles.png" width="200px" alt="tabla de talles de remera para mujer">
+        <div class="titulo__ropa">
+            <h1>Talles</h1>
+        </div>
+        <div class="container-fluid imagenes__ropa">
+            <div class="row">
+                <h2 class="titulo__ropa">Remeras</h2>
+                <div class="col-6">
+                    <img src="../assets/talles.png" alt="tabla de talles de remera para hombre">
+                </div>
+                <div class="col-6">
+                    <img src="../assets/talles.png" alt="tabla de talles de remera para hombre">
+                </div>
             </div>
-            <div class="imagenes__ropa">
+        </div>
+        <div class="container-fluid imagenes__ropa">
+            <div class="row">
                 <h2 class="titulo__ropa">Buzos</h2>
-                <img src="../assets/tallesBuzo.png" width="200px" alt="tabla de talles de buzo para hombre">
-                <img src="../assets/tallesBuzo.png" width="200px" alt="tabla de talles de buzo para mujer">
+                <div class="col-6">
+                    <img src="../assets/tallesBuzo.png" alt="tabla de talles de buzo para hombre">
+                </div>
+                <div class="col-6">
+                    <img src="../assets/tallesBuzo.png" alt="tabla de talles de buzo para hombre">
+                </div>
             </div>
         </div>
     </main>
@@ -66,23 +78,23 @@
             <div class="footer__partes--contacto">
                 <h2>Contacto</h2>
                 <ul class="footer__contacto__list">
-                    <li>Direccion Av.Siempreviva 123</li>
-                    <li>Telefono 1234-5678</li>
+                    <li>Direccion Uruguay 467, CABA</li>
+                    <li>Telefono 4373-5678</li>
                     <li>Email ejemplo@gmail.com</li>
                 </ul>
             </div>
-            <div class="footer__partes--secciones">
+            <div class="footer__partes__secciones">
                 <h2>Secciones</h2>
                 <ul class="footer__contacto__list">
                     <li><a class="links" href="../index.html">Inicio</a></li>
-                    <li><a class="links" href="../secciones/Remeras.html">Remeras</a></li>
-                    <li><a class="links" href="../secciones/Buzos.html">Buzos</a></li>
+                    <li><a class="links" href="./Remeras.html">Remeras</a></li>
+                    <li><a class="links" href="./Buzos.html">Buzos</a></li>
                     <li><a class="links" href="#">Talles</a></li>
-                </ul>
+                </ul> 
             </div>
-            <div class="footer__partes--redes">
+            <div class="footer__partes__redes">
                 <h2>Redes</h2>
-                   <a class="links" href="../redes/aqui dirigir a facebook">Facebook</a>
+                   <a class="links" href="../redes/facebook">Facebook</a>
                    <a class="links" href="../redes/instagram">Instagram</a>
                    <a class="links" href="../redes/whatsapp">Whatsapp</a> 
             </div><!--con cada link dirigir a cada red, nose como hacerlo todavia-->

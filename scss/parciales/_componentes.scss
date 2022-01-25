@@ -3,6 +3,8 @@
 .links{
     text-decoration: none;
     color: $blanco;
+    list-style-type: none;
+    text-decoration: none;
 
     &:hover{
     color: $naranja;

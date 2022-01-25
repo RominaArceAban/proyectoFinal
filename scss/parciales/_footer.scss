@@ -1,4 +1,5 @@
 @import "./variables";
+@import "./componentes";
 @mixin columna {
     display: flex;
     flex-direction: column;
@@ -22,7 +23,7 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    font-family: $verdana;
+    font-family: $letraSubtitulo;
     font-size: 18px;
     justify-content: space-between;
     gap: 40px;

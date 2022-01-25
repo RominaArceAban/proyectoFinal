@@ -5,13 +5,13 @@
     background-repeat: map-get($map: $imagenDeFondo, $key: imagen-repeat);
     background-size: map-get($map: $imagenDeFondo, $key: imagen-size);
     position: relative;
-    font-family: map-get($map: $imagenDeFondo, $key: letra);
+    font-family: $letraSubtitulo;
     overflow: hidden;
     height: 105vh;
 
     &__nosotros{
     position: relative;
-    font-size: 40px;
+    font-size: 30px;
     text-align: center;
     color: $blanco;
     top: 10%;

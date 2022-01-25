@@ -9,6 +9,7 @@
     font-family: map-get($map: $imagenDeFondo, $key: letra);
     color: rgba(240, 248, 255, 0.767);
     text-decoration: none;
+    font-size: 20px;
     overflow:hidden;
 }
 

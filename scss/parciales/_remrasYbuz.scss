@@ -1,0 +1,37 @@
+@import "./variables";
+@import "./componentes";
+@import "./queries";
+@mixin columna {
+    display: flex;
+    flex-direction: column;
+}
+
+.titulo__ropa{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: rgba(255,255,255,0.9);
+    padding: 20px;
+    font-size: 3rem;
+    justify-content: center;
+    font-family: $letraTitulo;
+    color: black;
+    text-decoration: none;
+}
+
+.imagenes__ropa{
+    background-color: rgba(255,255,255,0.9);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 50px;
+    height: 100%;
+    overflow: hidden;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 16px;
+  }

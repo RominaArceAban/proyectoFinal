@@ -1,10 +1,11 @@
-$blanco: aliceblue;
-$verdana: Verdana, Geneva, Tahoma, sans-serif;
+$blanco: rgb(255, 255, 255);
+$letraTitulo: Arial, Helvetica, sans-serif;
+$letraSubtitulo: Georgia, 'Times New Roman', Times, serif;
 $naranja: rgba(175, 96, 85, 0.973);
 
 $imagenDeFondo: (/*mapa-get*/
     imagen-repeat: no-repeat,
     imagen-size: cover,
     imagen-centro: center,
-    letra: $verdana,
+    letra: $letraTitulo,
 );

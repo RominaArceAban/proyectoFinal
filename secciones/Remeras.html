@@ -10,7 +10,7 @@
     <meta name="description" content="Compra productos de Alson por internet. Tenemos remeras, buzos y mas. Hace tu pedido y pagalo online.">
     <meta name="keywords" content="VENTA, REMERAS, BUZOS, DIFERENTES TAMAÑOS, REDES">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"><!--CDN de bs-->
-    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="stylesheet" href="../scss/main.css">
 </head>
 <body>
     <header class="header">
@@ -45,60 +45,66 @@
             </div>
         </nav>
     </header>
-    <main class="grid__remYbuz">
+    <main>
         <div class="titulo__ropa">
             <h1>Remeras</h1>
             <button>Filtrar</button>
         </div>
-        <div class="imagenes__ropa">
-            <div>
-                <img src="../assets/remeraHombre.jpg" alt="remera" class="ancho__imagen">
-                <p>Descripcion y precio</p>
+        <div class="container-fluid imagenes__ropa">
+            <div class="row">
+                <div class="col-md-3 col-12 wrapper">
+                    <img src="../assets/remera.jpg" alt="remera" class="ancho__imagen">
+                    <p>Descripcion y precio</p>
+                </div>
+                <div class="col-md-3 col-12 wrapper">
+                    <img src="../assets/remera.jpg" alt="remera" class="ancho__imagen">
+                    <p>Descripcion y precio</p>
+                </div>
+                <div class="col-md-3 col-12 wrapper">
+                    <img src="../assets/remera.jpg" alt="remera" class="ancho__imagen">
+                    <p>Descripcion y precio</p>
+                </div>
+                <div class="col-md-3 col-12 wrapper">
+                    <img src="../assets/remera.jpg" alt="remera" class="ancho__imagen">
+                    <p>Descripcion y precio</p>
+                </div>
             </div>
-            <div>
-                <img src="../assets/remeraHombre.jpg" alt="remera" class="ancho__imagen">
-                <p>Descripcion y precio</p>
+            <div class="row">
+                <div class="col-md-3 col-12 wrapper">
+                    <img src="../assets/remera.jpg" alt="remera" class="ancho__imagen">
+                    <p>Descripcion y precio</p>
+                </div>
+                <div class="col-md-3 col-12 wrapper">
+                    <img src="../assets/remera.jpg" alt="remera" class="ancho__imagen">
+                    <p>Descripcion y precio</p>
+                </div>
+                <div class="col-md-3 col-12 wrapper">
+                    <img src="../assets/remera.jpg" alt="remera" class="ancho__imagen">
+                    <p>Descripcion y precio</p>
+                </div>
+                <div class="col-md-3 col-12 wrapper">
+                    <img src="../assets/remera.jpg" alt="remera" class="ancho__imagen">
+                    <p>Descripcion y precio</p>
+                </div>
             </div>
-            <div>
-                <img src="../assets/remeraHombre.jpg" alt="remera" class="ancho__imagen">
-                <p>Descripcion y precio</p>
-            </div>
-            <div>
-                <img src="../assets/remeraHombre.jpg" alt="remera" class="ancho__imagen">
-                <p>Descripcion y precio</p>
-            </div>
-            <div>
-                <img src="../assets/remeraHombre.jpg" alt="remera" class="ancho__imagen">
-                <p>Descripcion y precio</p>
-            </div>
-            <div>
-                <img src="../assets/remeraHombre.jpg" alt="remera" class="ancho__imagen">
-                <p>Descripcion y precio</p>
-            </div>
-            <div>
-                <img src="../assets/remeraHombre.jpg" alt="remera" class="ancho__imagen">
-                <p>Descripcion y precio</p>
-            </div>
-            <div>
-                <img src="../assets/remeraHombre.jpg" alt="remera" class="ancho__imagen">
-                <p>Descripcion y precio</p>
-            </div>
-            <div>
-                <img src="../assets/remeraHombre.jpg" alt="remera" class="ancho__imagen">
-                <p>Descripcion y precio</p>
-            </div>
-            <div>
-                <img src="../assets/remeraHombre.jpg" alt="remera" class="ancho__imagen">
-                <p>Descripcion y precio</p>
-            </div>
-            <div>
-                <img src="../assets/remeraHombre.jpg" alt="remera" class="ancho__imagen">
-                <p>Descripcion y precio</p>
-            </div>
-            <div>
-                <img src="../assets/remeraHombre.jpg" alt="remera" class="ancho__imagen">
-                <p>Descripcion y precio</p>
-            </div>
+            <div class="row">
+                <div class="col-md-3 col-12 wrapper">
+                    <img src="../assets/remera.jpg" alt="remera" class="ancho__imagen">
+                    <p>Descripcion y precio</p>
+                </div>
+                <div class="col-md-3 col-12 wrapper">
+                    <img src="../assets/remera.jpg" alt="remera" class="ancho__imagen">
+                    <p>Descripcion y precio</p>
+                </div>
+                <div class="col-md-3 col-12 wrapper">
+                    <img src="../assets/remera.jpg" alt="remera" class="ancho__imagen">
+                    <p>Descripcion y precio</p>
+                </div>
+                <div class="col-md-3 col-12 wrapper">
+                    <img src="../assets/remera.jpg" alt="remera" class="ancho__imagen">
+                    <p>Descripcion y precio</p>
+                </div>
+            </div>    
         </div>
     </main>
     <footer class="footer">
@@ -107,23 +113,23 @@
             <div class="footer__partes--contacto">
                 <h2>Contacto</h2>
                 <ul class="footer__contacto__list">
-                    <li>Direccion Av.Siempreviva 123</li>
-                    <li>Telefono 1234-5678</li>
+                    <li>Direccion Uruguay 467, CABA</li>
+                    <li>Telefono 4373-5678</li>
                     <li>Email ejemplo@gmail.com</li>
                 </ul>
             </div>
-            <div class="footer__partes--secciones">
+            <div class="footer__partes__secciones">
                 <h2>Secciones</h2>
                 <ul class="footer__contacto__list">
                     <li><a class="links" href="../index.html">Inicio</a></li>
                     <li><a class="links" href="#">Remeras</a></li>
-                    <li><a class="links" href="../secciones/Buzos.html">Buzos</a></li>
-                    <li><a class="links" href="../secciones/Talles.html">Talles</a></li>
-                </ul>
+                    <li><a class="links" href="./Buzos.html">Buzos</a></li>
+                    <li><a class="links" href="./Talles.html">Talles</a></li>
+                </ul> 
             </div>
-            <div class="footer__partes--redes">
+            <div class="footer__partes__redes">
                 <h2>Redes</h2>
-                   <a class="links" href="../redes/aqui dirigir a facebook">Facebook</a>
+                   <a class="links" href="../redes/facebook">Facebook</a>
                    <a class="links" href="../redes/instagram">Instagram</a>
                    <a class="links" href="../redes/whatsapp">Whatsapp</a> 
             </div><!--con cada link dirigir a cada red, nose como hacerlo todavia-->

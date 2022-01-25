@@ -7,7 +7,9 @@
 
 .links {
   text-decoration: none;
-  color: aliceblue;
+  color: white;
+  list-style-type: none;
+  text-decoration: none;
 }
 
 .links:hover {
@@ -20,8 +22,8 @@
 }
 
 .header__item--links {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  color: aliceblue;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: white;
   text-decoration: none;
 }
 
@@ -50,9 +52,10 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   color: rgba(240, 248, 255, 0.767);
   text-decoration: none;
+  font-size: 20px;
   overflow: hidden;
 }
 
@@ -77,16 +80,16 @@
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
   overflow: hidden;
   height: 105vh;
 }
 
 .sectionDos__nosotros {
   position: relative;
-  font-size: 40px;
+  font-size: 30px;
   text-align: center;
-  color: aliceblue;
+  color: white;
   top: 10%;
 }
 
@@ -120,6 +123,18 @@
   margin: 110px 60px;
 }
 
+.links {
+  text-decoration: none;
+  color: white;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+.links:hover {
+  color: rgba(175, 96, 85, 0.973);
+  text-decoration: underline;
+}
+
 .footer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -145,7 +160,7 @@
 }
 
 .footer__partes {
-  color: aliceblue;
+  color: white;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -155,7 +170,7 @@
           flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 18px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -292,6 +307,7 @@
             flex-direction: column;
     -ms-flex-line-pack: center;
         align-content: center;
+    overflow: hidden;
   }
   .imagenes__ropa {
     width: auto;
@@ -305,5 +321,190 @@
   .ancho__imagen {
     width: 300px;
   }
+}
+
+.links {
+  text-decoration: none;
+  color: white;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+.links:hover {
+  color: rgba(175, 96, 85, 0.973);
+  text-decoration: underline;
+}
+
+/*MEDIA QUERIES*/
+@media screen and (max-width: 768px) {
+  .footer__logo {
+    width: 100%;
+  }
+  .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+  .imagenDeFondoHero {
+    height: 60vh;
+    overflow: hidden;
+  }
+  .hero {
+    position: absolute;
+    top: 25%;
+  }
+  .sectionDos {
+    height: 60vh;
+  }
+  .sectionDos__nosotros {
+    font-size: 20px;
+  }
+  .sectionTres__imagenes {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 5px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .sectionUno__titulo {
+    padding: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: auto;
+  }
+  .header__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+  }
+  .header__logo {
+    width: 100%;
+  }
+  .grid__remYbuz {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    overflow: hidden;
+  }
+  .imagenes__ropa {
+    width: auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-line-pack: center;
+        align-content: center;
+  }
+  .ancho__imagen {
+    width: 300px;
+  }
+}
+
+.titulo__ropa {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  font-size: 3rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+  text-decoration: none;
+}
+
+.imagenes__ropa {
+  background-color: rgba(255, 255, 255, 0.9);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 50px;
+  height: 100%;
+  overflow: hidden;
+}
+
+.wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(200px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 16px;
+}
+
+.links {
+  text-decoration: none;
+  color: white;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+.links:hover {
+  color: rgba(175, 96, 85, 0.973);
+  text-decoration: underline;
+}
+
+.formulario {
+  background-color: silver;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 20px;
 }
 /*# sourceMappingURL=main.css.map */
