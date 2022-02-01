@@ -19,11 +19,12 @@
 }
 
 .sectionTres{
-    background-color: rgb(49, 58, 58);
+    background-color: #566968;
     position: relative;
     font-style: normal;
     padding: 100px 100px 100px 100px;
     width: 100%;
+    color: #fff;
     overflow: hidden;
 
     &__imagenes{
@@ -33,11 +34,7 @@
 
     &-cuadro{
         display: inline-block;
-        background: rgb(34,193,195);
-        background: -moz-linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(119,187,192,1) 0%, rgba(162,184,187,1) 0%, rgba(167,183,188,1) 0%, rgba(180,182,189,1) 72%);
-        background: -webkit-linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(119,187,192,1) 0%, rgba(162,184,187,1) 0%, rgba(167,183,188,1) 0%, rgba(180,182,189,1) 72%);
-        background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(119,187,192,1) 0%, rgba(162,184,187,1) 0%, rgba(167,183,188,1) 0%, rgba(180,182,189,1) 72%);
-        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#22c1c3",endColorstr="#b4b6bd",GradientType=1); 
+        box-shadow: 10px 2px 30px 2px #2b2929;
         padding: 10px 0px;
         text-align: center;
         font-size: 20px;

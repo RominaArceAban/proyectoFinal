@@ -3,6 +3,12 @@
 .header{
     overflow: hidden;
 
+    &__logo{
+        width: 200px;
+        border-radius: 50%;
+        box-shadow: 0 0 5px 5px #787;
+    }
+
     &__item--links{
     font-family: $letraSubtitulo;
     color: $blanco;
@@ -12,9 +18,11 @@
     color: $naranja;
     text-decoration: underline;
 }
+
 } 
+
     .navbar{
-    background-color: rgba(15, 15, 15, 0.842);
+    background-color: #454544;
     font-size: 20px;
     display: flex;
     align-items: center;
