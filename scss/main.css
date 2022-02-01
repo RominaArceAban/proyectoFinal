@@ -9,7 +9,17 @@
   text-decoration: none;
   color: #fff;
   list-style-type: none;
+}
+
+.links:hover {
+  color: rgba(175, 96, 85, 0.973);
+  text-decoration: underline;
+}
+
+.links {
   text-decoration: none;
+  color: #fff;
+  list-style-type: none;
 }
 
 .links:hover {
@@ -32,13 +42,6 @@
   text-decoration: underline;
 }
 
-.header__item--links__logo {
-  width: 200px;
-  border-radius: 50%;
-  -webkit-box-shadow: 0 0 5px 5px #787;
-          box-shadow: 0 0 5px 5px #787;
-}
-
 .header .navbar {
   background-color: #454544;
   font-size: 20px;
@@ -51,6 +54,13 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.header .navbar__logo {
+  width: 200px;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 0 5px 5px #787;
+          box-shadow: 0 0 5px 5px #787;
 }
 
 .imagenDeFondoHero {
@@ -133,7 +143,6 @@
   text-decoration: none;
   color: #fff;
   list-style-type: none;
-  text-decoration: none;
 }
 
 .links:hover {
@@ -162,6 +171,7 @@
 }
 
 .footer__logo {
+  margin: 10px;
   width: 200px;
   border-radius: 50%;
   -webkit-box-shadow: 0 0 5px 5px #787;
@@ -237,7 +247,6 @@
   text-decoration: none;
   color: #fff;
   list-style-type: none;
-  text-decoration: none;
 }
 
 .links:hover {
@@ -248,7 +257,7 @@
 /*MEDIA QUERIES*/
 @media screen and (max-width: 768px) {
   .footer__logo {
-    width: 100%;
+    width: 60%;
   }
   .container {
     display: -webkit-box;
@@ -395,7 +404,6 @@
   text-decoration: none;
   color: #fff;
   list-style-type: none;
-  text-decoration: none;
 }
 
 .links:hover {
@@ -421,7 +429,7 @@
 /*MEDIA QUERIES*/
 @media screen and (max-width: 768px) {
   .footer__logo {
-    width: 100%;
+    width: 60%;
   }
   .container {
     display: -webkit-box;
