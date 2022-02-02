@@ -1,20 +1,33 @@
 @import "./variables";
 
 .sectionDos{
-    background-image: url(../assets/imagenNosotros.png);
-    background-repeat: map-get($map: $imagenDeFondo, $key: imagen-repeat);
-    background-size: map-get($map: $imagenDeFondo, $key: imagen-size);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     position: relative;
-    font-family: $letraSubtitulo;
-    overflow: hidden;
     height: 105vh;
+    overflow: hidden;
 
-    &__nosotros{
-    position: relative;
-    font-size: 30px;
-    text-align: center;
-    color: $blanco;
-    top: 10%;
+    &__nosotrosUno{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        font-family: $letraSubtitulo;
+        font-size: 20px;
+        color: black;
+        padding: 20px;
+}
+
+    &__nosotrosDos{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 20px;
+
+        &--imagen{
+            box-shadow: 10px 2px 30px 2px #2b2929;
+            padding: 0px;
+}
 }
 }
 
@@ -24,7 +37,7 @@
     font-style: normal;
     padding: 100px 100px 100px 100px;
     width: 100%;
-    color: #fff;
+    color: $blanco;
     overflow: hidden;
 
     &__imagenes{

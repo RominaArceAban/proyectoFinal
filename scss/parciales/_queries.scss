@@ -24,13 +24,10 @@
     } 
     
     .sectionDos{
-        height: 100vh;
+        grid-template-columns: repeat(1, 1fr);
+        height: 150vh;
     }
-    
-    .sectionDos__nosotros{
-        font-size: 20px;
-    }
-    
+
     .sectionTres__imagenes{
         display: flex;
         flex-direction: column;
@@ -70,5 +67,10 @@
     
     .ancho__imagen{
         width: 300px;
+    }
+
+    .formulario__cuadro{
+        width: auto;
+        margin: 10px 0px;
     }
     }

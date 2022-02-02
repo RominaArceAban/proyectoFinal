@@ -4,17 +4,6 @@
 .header{
     overflow: hidden;
 
-    &__item--links{
-    font-family: $letraSubtitulo;
-    color: $blanco;
-    text-decoration: none;
-
-    &:hover{
-    color: $naranja;
-    text-decoration: underline;
-}
-} 
-
     .navbar{
     background-color: #454544;
     font-size: 20px;
@@ -26,6 +15,17 @@
         width: 200px;
         border-radius: 50%;
         box-shadow: 0 0 5px 5px #787;
+}
+}
+
+    .nav-link{
+    font-family: $letraSubtitulo;
+    color: $blanco;
+    text-decoration: none;
+
+    &:hover{
+    color: $naranja;
+    text-decoration: underline;
 }
 }
 }

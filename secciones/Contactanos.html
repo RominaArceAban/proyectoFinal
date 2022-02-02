@@ -41,26 +41,29 @@
                         </li>
                     </ul> 
                 </div>
-                
             </div>
         </nav>
     </header>
-    <main class="formulario">
-        <form>
+    <main class="formulario container-fluid">
+        <div class="row">
+           <form data-aos="fade-up" data-aos-duration="3000" class="col-12 formulario__cuadro">
             <fieldset>
-              <legend>Formulario de contacto</legend>
+              <div>
+                <h1 class="formulario__titulo">Formulario de contacto</h1>
+                <p>Dejanos tu consulta y a la brevedad te responderemos!</p> 
+                <br>
+              </div>
               <div class="mb-3">
                 <label for="disabledTextInput" class="form-label">Nombres</label>
                 <input type="text" id="disabledTextInput" class="form-control" placeholder="Introduzca su nombre y apellido">
               </div>
               <div class="mb-3">
                 <label for="disabledSelect" class="form-label">Numero telefonico</label>
-                <input type="text" id="disabledTextInput" class="form-control" placeholder="Introduzca su numero de celular o telefono">
+                <input type="number" id="disabledTextInput" class="form-control" placeholder="Introduzca su numero de celular o telefono">
               </div>
-
               <div class="mb-3">
                 <label for="exampleFormControlInput1" class="form-label">Correo electronico</label>
-                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="micorreo@ejemplo.com">
               </div>
               <div class="mb-3">
                 <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
@@ -68,11 +71,12 @@
               </div>
               <div class="mb-3 form-check">
                 <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                <label class="form-check-label" for="exampleCheck1">Quiero suscribirme al newsletter</label>
               </div>
-              <button type="submit" class="btn btn-primary">Enviar</button>
+              <button type="submit" class="btn btn-light button">Enviar</button>
             </fieldset>
           </form>
+        </div>  
     </main>
     <footer class="footer">
         <img class="footer__logo" src="../assets/logo.png" alt="logo">
