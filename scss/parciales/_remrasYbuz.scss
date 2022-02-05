@@ -8,12 +8,13 @@
 
 .titulo__ropa{
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    background-color: rgba(255,255,255,0.9);
-    padding: 20px;
-    font-size: 3rem;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+    align-content: center;
+    background-color: rgba(255,255,255,0.9);
+    padding: 70px 0px 10px 0px;
+    font-size: 3rem;
     font-family: $letraTitulo;
     color: black;
     text-decoration: none;
@@ -21,17 +22,62 @@
 
 .imagenes__ropa{
     background-color: rgba(255,255,255,0.9);
-    display: flex;
+    display: inline-block;
     align-items: center;
     justify-content: space-around;
     flex-wrap: wrap;
     padding: 50px;
     height: 100%;
+    position: relative;
     overflow: hidden;
+
+    &--img {
+    position: relative;
+    transition: 3s transform;
+    display: block;
+    height: 100%;
+    overflow: hidden;
+
+    &:hover {
+        transform: scaleX(1.1);
+}
 }
 
-.wrapper {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    grid-gap: 16px;
+    &--descripcion {
+    position: relative;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+}
+}
+
+.imagenes__filas{
+    padding: 5px 5px 30px 5px;
+}
+
+.imagenes__section {
+    display: block;
+    overflow: hidden;  
+    position: relative;
+}
+
+.imagenes__talles {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: center;
+    font-family: $letraSubtitulo;
+    font-size: 20px;
+    color: black;
+    padding: 20px;
+  }
+
+.imagenes__img {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-end;
+      align-content: flex-end;
   }

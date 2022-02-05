@@ -3,14 +3,12 @@
 @mixin columna {
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: auto;
 }
 
 .footer{
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content:space-between;
     background-color: #454544;
     overflow: hidden;
 
@@ -19,6 +17,11 @@
     width: 200px;
     border-radius: 50%;
     box-shadow: 0 0 5px 5px #787;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
 }
 
     &__partes{
@@ -30,18 +33,10 @@
     font-size: 18px;
     justify-content: space-between;
     gap: 40px;
-    padding: 10px 80px;
+    padding: 10px 20px;
 
     &__secciones{
     @include columna;
-    justify-content: flex-start;
-    align-items: flex-start;
-}
-
-    &__redes{
-    @include columna;
-    justify-content: flex-start;
-    align-items: flex-start;
 }
 }
 
@@ -49,7 +44,7 @@
     @include columna;
     list-style-type: none;
     text-decoration: none;
-    padding: 0px;
+    }
 }
-}
+
 

@@ -17,7 +17,7 @@
         <nav class="navbar navbar-expand-lg navbar-dark">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">
-                    <img src="../assets/logo.png" alt="logo" height="50">
+                    <img class="navbar__logo" src="../assets/logo.png" alt="logo" height="70">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -25,19 +25,19 @@
                 <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
                     <ul class="navbar-nav align-items-center">
                         <li class="nav-item">
-                            <a class="nav-link header__item--links" href="../index.html">Inicio</a>
+                            <a class="nav-link" href="../">Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link header__item--links" href="../secciones/Remeras.html">Remeras</a>
+                            <a class="nav-link" href="./Remeras.html">Remeras</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link header__item--links" href="../secciones/Buzos.html">Buzos</a>
+                            <a class="nav-link" href="./Buzos.html">Buzos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link header__item--links" href="#">Talles</a>
+                            <a class="nav-link" href="./Talles.html">Talles</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link header__item--links" href="../secciones/Contactanos.html">Contacto</a>
+                            <a class="nav-link" href="./Contactanos.html">Contacto</a>
                         </li>
                     </ul> 
                 </div>
@@ -47,35 +47,48 @@
     </header>
     <main>
         <div class="titulo__ropa">
-            <h1>Talles</h1>
+            <h1 class="display-4">Talles</h1>
         </div>
         <div class="container-fluid imagenes__ropa">
             <div class="row">
-                <h2 class="titulo__ropa">Remeras</h2>
-                <div class="col-md-6 col-12">
-                    <img src="../assets/talles.png" class="ancho__imagen" alt="tabla de talles de remera para hombre">
+                <div class="col-md-6 col-12 imagenes__talles">
+                    <h2 class="titulo__ropa">Remeras</h2>
+                    <p>
+                        <ol>Para saber cual es tu talle segui estos pasos:</ol>
+                        <ol>Ancho de hombros: Tomar la medida de hombro a hombro, justo sobre el hueso que sobresale del mismo.</ol>
+                        <ol>Contorno de busto: Rodea tu busto con una cinta metrica flexible en la parte de mayor volumen.</ol>
+                        <ol>Contorno de cintura: Rodea la parte mas estrecha de tu cintura con una cinta metrica.</ol>
+                        <ol>Contorno de cadera: Estando de pie, con los pies juntos, rodea la parte de mayor volumen de tu cadera con una cinta metrica.</ol>
+                    </p>
                 </div>
-                <div class="col-md-6 col-12">
-                    <img src="../assets/talles.png" class="ancho__imagen" alt="tabla de talles de remera para hombre">
+                <div class="col-md-6 col-12 imagenes__img">
+                    <img src="../assets/talles.png" class="ancho__imagen" alt="tabla de talles de remera">
                 </div>
             </div>
         </div>
         <div class="container-fluid imagenes__ropa">
             <div class="row">
-                <h2 class="titulo__ropa">Buzos</h2>
-                <div class="col-md-6 col-12">
-                    <img src="../assets/tallesBuzo.png" class="ancho__imagen" alt="tabla de talles de buzo para hombre">
+                <div class="col-md-6 col-12 imagenes__talles">
+                    <h2 class="titulo__ropa">Buzos</h2>
+                    <p>
+                        <ol>Para elegir tu talle correcto segui las mismas recomendaciones indicadas para las remeras, anteriormente detalladas.</ol>
+                        <ol>Recorda que las medidas deben ser tomadas en linea recta, para que las puedas comparar con las medidas de una prenda tuya y poder definir tu talle correcto. Si no estas seguro no dudes en contactarte con nosotros!.</ol>
+                        <ol>Buzos confeccionados en suplex frisado y elastizado, ideales para todas las estaciones porque son abrigados pero livianos.</ol>
+                        <ol>En el cuadro se muestran medidas del cuerpo promedio utilizado para el desarrollo de cada producto. Norma IRAM 75300-3:2019.</ol>
+                    </p>
                 </div>
-                <div class="col-md-6 col-12">
-                    <img src="../assets/tallesBuzo.png" class="ancho__imagen" alt="tabla de talles de buzo para hombre">
+                <div class="col-md-6 col-12 imagenes__talles">
+                    <img src="../assets/tallesBuzo.png" class="ancho__imagen" alt="tabla de talles de buzo">
                 </div>
             </div>
         </div>
     </main>
-    <footer class="footer">
-        <img class="footer__logo" src="../assets/logo.png" alt="logo">
-        <div class="footer__partes">
-            <div class="footer__partes--contacto">
+    <footer class="container-fluid footer">
+        <div class="row footer__partes">
+            <div class="col-md-3 col-12 footer__partes__secciones">
+               <img class="footer__logo" src="../assets/logo.png" alt="logo" height="70"> 
+            </div>
+            <div class="col-md-3 col-12 footer__partes__secciones">
                 <h2>Contacto</h2>
                 <ul class="footer__contacto__list">
                     <li>Direccion Uruguay 467, CABA</li>
@@ -83,20 +96,22 @@
                     <li>Email ejemplo@gmail.com</li>
                 </ul>
             </div>
-            <div class="footer__partes__secciones">
+            <div class="col-md-3 col-12 footer__partes__secciones">
                 <h2>Secciones</h2>
                 <ul class="footer__contacto__list">
                     <li><a class="links" href="../index.html">Inicio</a></li>
-                    <li><a class="links" href="./Remeras.html">Remeras</a></li>
-                    <li><a class="links" href="./Buzos.html">Buzos</a></li>
-                    <li><a class="links" href="#">Talles</a></li>
+                    <li><a class="links" href="../secciones/Remeras.html">Remeras</a></li>
+                    <li><a class="links" href="../secciones/Buzos.html">Buzos</a></li>
+                    <li><a class="links" href="../secciones/Talles.html">Talles</a></li>
                 </ul> 
             </div>
-            <div class="footer__partes__redes">
+            <div class="col-md-3 col-12 footer__partes__secciones">
                 <h2>Redes</h2>
-                   <a class="links" href="../redes/facebook">Facebook</a>
-                   <a class="links" href="../redes/instagram">Instagram</a>
-                   <a class="links" href="../redes/whatsapp">Whatsapp</a> 
+                <ul class="footer__contacto__list">
+                    <li><a class="links" href="#">Facebook</a></li>
+                    <li><a class="links" href="#">Instagram</a></li>
+                    <li><a class="links" href="#">Whatsapp</a></li>
+                </ul>  
             </div><!--con cada link dirigir a cada red, nose como hacerlo todavia-->
         </div>
     </footer>

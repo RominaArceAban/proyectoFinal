@@ -5,7 +5,7 @@
     overflow: hidden;
 
     .navbar{
-    background-color: #454544;
+    background-color: $formulario;
     font-size: 20px;
     display: flex;
     align-items: center;
@@ -15,17 +15,6 @@
         width: 200px;
         border-radius: 50%;
         box-shadow: 0 0 5px 5px #787;
-}
-}
-
-    .nav-link{
-    font-family: $letraSubtitulo;
-    color: $blanco;
-    text-decoration: none;
-
-    &:hover{
-    color: $naranja;
-    text-decoration: underline;
 }
 }
 }

@@ -1,9 +1,10 @@
 @import "./variables";
 
 .links{
+    list-style-type: none;
     text-decoration: none;
     color: $blanco;
-    list-style-type: none;
+    padding: 10px;
 
     &:hover{
     color: $naranja;

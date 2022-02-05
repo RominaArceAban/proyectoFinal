@@ -31,8 +31,23 @@
 }
 }
 
+.sectionCarousel {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel-item {
+    height: 100vh;
+    min-height: 300px;
+}
+
 .sectionTres{
-    background-color: #566968;
     position: relative;
     font-style: normal;
     padding: 100px 100px 100px 100px;
@@ -47,6 +62,7 @@
 
     &-cuadro{
         display: inline-block;
+        background-color: $formulario;
         box-shadow: 10px 2px 30px 2px #2b2929;
         padding: 10px 0px;
         text-align: center;

@@ -1,9 +1,5 @@
 /*MEDIA QUERIES*/
 @media screen and (max-width: 768px){
-
-    .footer__logo{
-        width: 60%;
-    }
     
     .container{
         display: flex;
@@ -63,10 +59,11 @@
         width: auto;
         flex-direction: column;
         align-content: center;
+        padding: 25px 10px;
     }
     
     .ancho__imagen{
-        width: 300px;
+        width: 250px;
     }
 
     .formulario__cuadro{
