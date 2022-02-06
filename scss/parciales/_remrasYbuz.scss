@@ -1,14 +1,13 @@
 @import "./variables";
 @import "./componentes";
 @import "./queries";
-@mixin columna {
+@mixin ropa {
     display: flex;
     flex-direction: column;
 }
 
 .titulo__ropa{
-    display: flex;
-    flex-direction: column;
+    @include ropa;
     justify-content: center;
     align-items: center;
     align-content: center;
@@ -53,7 +52,7 @@
 }
 }
 
-.imagenes__filas{
+.imagenes__filas {
     padding: 5px 5px 30px 5px;
 }
 
@@ -64,8 +63,7 @@
 }
 
 .imagenes__talles {
-    display: flex;
-    flex-direction: column;
+    @include ropa;
     justify-content: flex-start;
     align-content: center;
     font-family: $letraSubtitulo;
@@ -75,8 +73,7 @@
   }
 
 .imagenes__img {
-      display: flex;
-      flex-direction: column;
+      @include ropa;
       justify-content: center;
       align-items: flex-end;
       align-content: flex-end;

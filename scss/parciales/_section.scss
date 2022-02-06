@@ -1,4 +1,10 @@
 @import "./variables";
+@mixin nosotros {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px 40px;
+}
 
 .sectionDos{
     display: grid;
@@ -8,21 +14,15 @@
     overflow: hidden;
 
     &__nosotrosUno{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+        @include nosotros;
         text-align: center;
         font-family: $letraSubtitulo;
         font-size: 20px;
         color: black;
-        padding: 20px;
 }
 
     &__nosotrosDos{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        padding: 20px;
+        @include nosotros;
 
         &--imagen{
             box-shadow: 10px 2px 30px 2px #2b2929;
@@ -34,7 +34,7 @@
 .sectionCarousel {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     align-content: center;
     height: 100vh;
@@ -42,15 +42,10 @@
     overflow: hidden;
 }
 
-.carousel-item {
-    height: 100vh;
-    min-height: 300px;
-}
-
 .sectionTres{
     position: relative;
     font-style: normal;
-    padding: 100px 100px 100px 100px;
+    padding: 40px;
     width: 100%;
     color: $blanco;
     overflow: hidden;
@@ -69,19 +64,7 @@
         font-size: 20px;
         width: 300px;
         margin: 110px 60px;
-    }
-
-    &-cuadro--uno{
-        @extend .sectionTres__imagenes-cuadro;
-    }
-
-    &-cuadro--dos{
-        @extend .sectionTres__imagenes-cuadro;
-    }
-
-    &-cuadro--tres{
-        @extend .sectionTres__imagenes-cuadro;
-    }
+}
 }
 }
 

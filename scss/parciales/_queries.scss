@@ -21,7 +21,11 @@
     
     .sectionDos{
         grid-template-columns: repeat(1, 1fr);
-        height: 150vh;
+        height: 170vh;
+    }
+
+    .sectionCarousel{
+        height: 70vh;
     }
 
     .sectionTres__imagenes{
