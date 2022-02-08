@@ -16,17 +16,17 @@
     box-sizing: border-box;
 
     &__cuadro{
-        border: solid 2px $formulario;
+        border: solid 2px $colorBase;
         margin: 10px;
         padding: 30px;
         width: 500px;
 }
 
     &__titulo{
-        color: $formulario;
+        color: $colorBase;
 }
 
    .button{
-    background-color: $formulario;
+    background-color: $colorBase;
 }
 }

@@ -34,7 +34,7 @@
 }
 
 .header .navbar {
-  background-color: #a2c9c9;
+  background-color: #e2b5ca;
   font-size: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -88,7 +88,7 @@
 .sectionDos {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[2];
+  -ms-grid-columns: (1fr)(2);
       grid-template-columns: repeat(2, 1fr);
   position: relative;
   height: 105vh;
@@ -166,14 +166,14 @@
 .sectionTres__imagenes {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[3];
+  -ms-grid-columns: (1fr)(3);
       grid-template-columns: repeat(3, 1fr);
   place-content: center;
 }
 
 .sectionTres__imagenes-cuadro {
   display: inline-block;
-  background-color: #a2c9c9;
+  background-color: #e2b5ca;
   -webkit-box-shadow: 10px 2px 30px 2px #2b2929;
           box-shadow: 10px 2px 30px 2px #2b2929;
   padding: 10px 0px;
@@ -196,7 +196,7 @@
 }
 
 .footer {
-  background-color: #a2c9c9;
+  background-color: #e2b5ca;
   overflow: hidden;
 }
 
@@ -305,7 +305,7 @@
     top: 25%;
   }
   .sectionDos {
-    -ms-grid-columns: (1fr)[1];
+    -ms-grid-columns: (1fr)(1);
         grid-template-columns: repeat(1, 1fr);
     height: 170vh;
   }
@@ -532,18 +532,18 @@
 }
 
 .formulario__cuadro {
-  border: solid 2px #a2c9c9;
+  border: solid 2px #e2b5ca;
   margin: 10px;
   padding: 30px;
   width: 500px;
 }
 
 .formulario__titulo {
-  color: #a2c9c9;
+  color: #e2b5ca;
 }
 
 .formulario .button {
-  background-color: #a2c9c9;
+  background-color: #e2b5ca;
 }
 
 /*MEDIA QUERIES*/
@@ -573,7 +573,7 @@
     top: 25%;
   }
   .sectionDos {
-    -ms-grid-columns: (1fr)[1];
+    -ms-grid-columns: (1fr)(1);
         grid-template-columns: repeat(1, 1fr);
     height: 170vh;
   }
