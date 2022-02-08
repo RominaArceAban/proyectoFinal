@@ -13,7 +13,7 @@
 }
 
 .links:hover {
-  color: rgba(175, 96, 85, 0.973);
+  color: #9182c4;
   text-decoration: underline;
 }
 
@@ -25,7 +25,7 @@
 }
 
 .links:hover {
-  color: rgba(175, 96, 85, 0.973);
+  color: #9182c4;
   text-decoration: underline;
 }
 
@@ -34,7 +34,7 @@
 }
 
 .header .navbar {
-  background-color: #e2b5ca;
+  background-color: #d8aed3;
   font-size: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -88,7 +88,7 @@
 .sectionDos {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)(2);
+  -ms-grid-columns: (1fr)[2];
       grid-template-columns: repeat(2, 1fr);
   position: relative;
   height: 105vh;
@@ -166,14 +166,14 @@
 .sectionTres__imagenes {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)(3);
+  -ms-grid-columns: (1fr)[3];
       grid-template-columns: repeat(3, 1fr);
   place-content: center;
 }
 
 .sectionTres__imagenes-cuadro {
   display: inline-block;
-  background-color: #e2b5ca;
+  background-color: #d8aed3;
   -webkit-box-shadow: 10px 2px 30px 2px #2b2929;
           box-shadow: 10px 2px 30px 2px #2b2929;
   padding: 10px 0px;
@@ -191,12 +191,12 @@
 }
 
 .links:hover {
-  color: rgba(175, 96, 85, 0.973);
+  color: #9182c4;
   text-decoration: underline;
 }
 
 .footer {
-  background-color: #e2b5ca;
+  background-color: #d8aed3;
   overflow: hidden;
 }
 
@@ -274,7 +274,7 @@
 }
 
 .links:hover {
-  color: rgba(175, 96, 85, 0.973);
+  color: #9182c4;
   text-decoration: underline;
 }
 
@@ -305,7 +305,7 @@
     top: 25%;
   }
   .sectionDos {
-    -ms-grid-columns: (1fr)(1);
+    -ms-grid-columns: (1fr)[1];
         grid-template-columns: repeat(1, 1fr);
     height: 170vh;
   }
@@ -401,7 +401,7 @@
   padding: 70px 0px 10px 0px;
   font-size: 3rem;
   font-family: Arial, Helvetica, sans-serif;
-  color: #e2b5ca;
+  color: #d8aed3;
   text-decoration: none;
 }
 
@@ -508,7 +508,7 @@
 }
 
 .links:hover {
-  color: rgba(175, 96, 85, 0.973);
+  color: #9182c4;
   text-decoration: underline;
 }
 
@@ -532,18 +532,18 @@
 }
 
 .formulario__cuadro {
-  border: solid 2px #e2b5ca;
+  border: solid 2px #d8aed3;
   margin: 10px;
   padding: 30px;
   width: 500px;
 }
 
 .formulario__titulo {
-  color: #e2b5ca;
+  color: #d8aed3;
 }
 
 .formulario .button {
-  background-color: #e2b5ca;
+  background-color: #d8aed3;
 }
 
 /*MEDIA QUERIES*/
@@ -573,7 +573,7 @@
     top: 25%;
   }
   .sectionDos {
-    -ms-grid-columns: (1fr)(1);
+    -ms-grid-columns: (1fr)[1];
         grid-template-columns: repeat(1, 1fr);
     height: 170vh;
   }
