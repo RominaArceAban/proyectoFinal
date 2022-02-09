@@ -88,7 +88,7 @@
 .sectionDos {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[2];
+  -ms-grid-columns: (1fr)(2);
       grid-template-columns: repeat(2, 1fr);
   position: relative;
   height: 105vh;
@@ -166,7 +166,7 @@
 .sectionTres__imagenes {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[3];
+  -ms-grid-columns: (1fr)(3);
       grid-template-columns: repeat(3, 1fr);
   place-content: center;
 }
@@ -305,7 +305,7 @@
     top: 25%;
   }
   .sectionDos {
-    -ms-grid-columns: (1fr)[1];
+    -ms-grid-columns: (1fr)(1);
         grid-template-columns: repeat(1, 1fr);
     height: 170vh;
   }
@@ -573,7 +573,7 @@
     top: 25%;
   }
   .sectionDos {
-    -ms-grid-columns: (1fr)[1];
+    -ms-grid-columns: (1fr)(1);
         grid-template-columns: repeat(1, 1fr);
     height: 170vh;
   }
