@@ -12,20 +12,20 @@
     align-items: center;
     align-content: center;
     background-color: rgba(255,255,255,0.9);
-    padding: 70px 0px 10px 0px;
+    padding: 70px 0px 70px 0px;
     font-size: 3rem;
     font-family: $letraTitulo;
     color: $colorBase;
     text-decoration: none;
 }
 
-.imagenes__ropa{
+/*.imagenes__ropa{
     background-color: rgba(255,255,255,0.9);
-    display: inline-block;
+    display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
     flex-wrap: wrap;
-    padding: 50px;
+    padding: 30px;
     height: 100%;
     position: relative;
     overflow: hidden;
@@ -40,7 +40,7 @@
     &:hover {
         transform: scaleX(1.1);
 }
-}
+} 
 
     &--descripcion {
     position: relative;
@@ -50,26 +50,65 @@
     align-items: center;
     margin: 0px;
 }
+} */
+
+.imagenes__row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    overflow: hidden;
 }
 
 .imagenes__filas {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
     padding: 5px 5px 30px 5px;
 }
 
 .imagenes__section {
     display: block;
-    overflow: hidden;  
+    overflow: hidden;
     position: relative;
+    height: auto;
+    
+
+    &--img{
+        position: relative;
+        height: auto;
+        transition: all 4s;
+        overflow: hidden;
+
+       &:hover {
+        transform: scale(1.1);
+} 
+} 
 }
 
+.imagenes__ropaDescripcion {
+    position: relative;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+}
+
+// talles.html
 .imagenes__talles {
-    @include ropa;
+    display: flex;
+    flex-direction: row;
     justify-content: flex-start;
     align-content: center;
+    align-items: center;
     font-family: $letraSubtitulo;
     font-size: 20px;
     color: black;
-    padding: 20px;
+    padding: 10px;
+    overflow: hidden;
   }
 
 .imagenes__img {
@@ -77,4 +116,5 @@
       justify-content: center;
       align-items: flex-end;
       align-content: flex-end;
+      overflow: hidden;
   }

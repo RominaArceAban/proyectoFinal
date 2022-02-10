@@ -52,26 +52,30 @@
         width: 100%;
     }
     
-    .grid__remYbuz{
-        display: flex;
-        flex-direction: column;
-        align-content: center;
-        overflow: hidden;
-    }
-    
-    .imagenes__ropa{
-        width: auto;
-        flex-direction: column;
-        align-content: center;
-        padding: 25px 10px;
-    }
-    
     .ancho__imagen{
         width: 250px;
+    }
+
+    .imagenes__talles {
+      display: block;
+      overflow: hidden;
+    }
+    .imagenes__img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        overflow: hidden;
     }
 
     .formulario__cuadro{
         width: auto;
         margin: 10px 0px;
+    }
+
+    .footer__partes{
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
     }
     }
