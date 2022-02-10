@@ -3,80 +3,50 @@
 @import "./queries";
 @mixin ropa {
     display: flex;
-    flex-direction: column;
+    align-items: center;
+    align-content: center;
 }
 
 .titulo__ropa{
     @include ropa;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
-    align-content: center;
     background-color: rgba(255,255,255,0.9);
-    padding: 70px 0px 70px 0px;
+    padding: 50px 0px;
     font-size: 3rem;
     font-family: $letraTitulo;
     color: $colorBase;
     text-decoration: none;
 }
 
-/*.imagenes__ropa{
-    background-color: rgba(255,255,255,0.9);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    padding: 30px;
-    height: 100%;
-    position: relative;
-    overflow: hidden;
-
-    &--img {
-    position: relative;
-    transition: 3s transform;
-    display: block;
-    height: 100%;
-    overflow: hidden;
-
-    &:hover {
-        transform: scaleX(1.1);
-}
-} 
-
-    &--descripcion {
-    position: relative;
-    display: flex;
-    align-content: center;
-    justify-content: center;
-    align-items: center;
-    margin: 0px;
-}
-} */
-
-.imagenes__row {
-    display: flex;
+.imagenesRow {
+    @include ropa;
     flex-direction: row;
     flex-wrap: wrap;
-    align-content: center;
-    align-items: center;
     overflow: hidden;
+    padding: 40px 10px;
 }
 
-.imagenes__filas {
-    display: flex;
+.imagenesFilas {
+    @include ropa;
     flex-direction: column;
-    align-content: center;
-    align-items: center;
     padding: 5px 5px 30px 5px;
+
+    &__description {
+        @include ropa;
+        position: relative;
+        justify-content: center;
+        margin: 0px;
+    }
 }
 
-.imagenes__section {
+.imagenesSection {
     display: block;
     overflow: hidden;
     position: relative;
     height: auto;
     
-
-    &--img{
+    &__img{
         position: relative;
         height: auto;
         transition: all 4s;
@@ -88,14 +58,6 @@
 } 
 }
 
-.imagenes__ropaDescripcion {
-    position: relative;
-    display: flex;
-    align-content: center;
-    justify-content: center;
-    align-items: center;
-    margin: 0px;
-}
 
 // talles.html
 .imagenes__talles {
@@ -107,12 +69,13 @@
     font-family: $letraSubtitulo;
     font-size: 20px;
     color: black;
-    padding: 10px;
+    padding: 20px 40px;
     overflow: hidden;
   }
 
 .imagenes__img {
       @include ropa;
+      flex-direction: column;
       justify-content: center;
       align-items: flex-end;
       align-content: flex-end;

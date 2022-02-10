@@ -13,7 +13,7 @@
     height: 105vh;
     overflow: hidden;
 
-    &__nosotrosUno{
+    &__first{
         @include nosotros;
         text-align: center;
         font-family: $letraSubtitulo;
@@ -21,10 +21,10 @@
         color: black;
 }
 
-    &__nosotrosDos{
+    &__second{
         @include nosotros;
 
-        &--imagen{
+        &--img{
             box-shadow: 10px 2px 30px 2px #2b2929;
             padding: 0px;
 }
